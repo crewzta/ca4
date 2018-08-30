@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MASC Style Guide - Navigation</title>
+
+<!-- Bootstrap -->
+<link href="templates/project/styles.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+<body class="detail-page">
+	
+<nav class="navbar navbar-default navbar-fixed-top">
+	
+  <div class="container">
+	  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><img src="assets/images/logo-white.png" alt="My Masc"></a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+	<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Enter Information <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" id="a-sar-link">Seeded Acreage Report and Hail</a></li>
+            <li><a href="#" id="a-cop-link">All Carry Over Production</a></li>
+            <li><a href="#" id="a-hrp-link">Harvested Production Report</a></li>
+			 <li><a href="#" id="a-hail-link">Register a Hail Insurance Claim</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello Bob <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+			  <li><a href="#">View My Accounts</a></li>
+
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Settings</li>
+            <li><a href="#">Change password</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<div class="container"> 
+  <!-- start Page nav -->
+  
+	<div class="row">
+		 <div class="col-xs-12">
+			<p class="landingGreet">Programs belonging to Bob Farmer</p>
+		</div>
+	</div>
+  
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading"> Active programs </div>
+        <div class="panel-body">
+   
+          <div class="active-contract">
+			  <p class="h3">Insurance</p> 
+            <div class="row">
+              <div class="col-sm-3"> <a href="old/loan-info-v3.html" class="loan-active-link">
+
+                </a> </div>
+
+            </div>
+            <div class="table-responsive">
+              <table class="table table-panel">
+                <thead>
+                  <tr>
+					<th id="th-ins-id">Contract Number</th>
+                    <th id="th-lend-contract">Name</th>
+                    <th id="th-lend-contract">Type</th>
+					<th class="text-right hidden-xs" id="th-lend-agriPrem">Premium</th>
+                    <th class="text-right hidden-xs" id="th-lend-hailPrem">Interest <sup>[1]</sup></th>
+                   <th class="text-right" id="th-lend-hailPrem">Total Premium</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+					<td rowspan="2" class="td-middle"><a href="ins-info-crop-selections-vA.html">118911002</a></td>  
+                    <td rowspan="2" class="td-middle">Bob Farmer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>Agriinsurance</td>
+                    <td class="text-right hidden-xs">100,000</td>
+                    <td class="text-right hidden-xs">0.00</td>
+					<td class="text-right">100,000</td>
+                  </tr>
+                <tr>
+                  <td>Hail</td>
+                  <td class="text-right hidden-xs">100,000</td>
+                  <td class="text-right hidden-xs">0.00</td>
+                  <td class="text-right">100,000</td>
+                </tr>					
+               <tr>
+					<td colspan="3" class="text-center" id="th-lend-total">Total</td>  
+                    <td class="highlight text-right hidden-xs">100,000</td>
+					<td class="highlight text-right hidden-xs">0.00</td>
+				   <td class="highlight text-right">100,000</td>
+	
+                </tbody>
+				  
+              </table>
+			 <p class="small hidden-xs"><sup>[1]</sup> The premium and administration fees are due upon billing and interest will be charged at the rate of &lt;x.xxx%&gt; per annum effective October 1st if the premium is not paid by October 31st." </p>
+            </div>
+          </div>
+          <div class="active-contract">
+       		<p class="h3">Loans</p>			  
+            <div class="table-responsive">
+
+              <table class="table table-striped table-panel">
+                <thead>
+                  <tr>
+					<th class="text-left" id="th-lend-loanNumber">Loan Number</th>
+                    <th class="text-right" id="th-lend-interestRate">Interest Rate</th>
+                    <th class="text-right" id="th-lend-balance">Balance</th>
+                    <th class="text-right hidden-xs" id="th-lend-accrued">Accrued Interest</th>
+                    <th class="text-right" id="th-lend-payout">Payout Balance</th>
+                    <th class="text-right hidden-xs" id="th-lend-perDiem">Per Diem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+					<td class="text-left"><a href="loan-info-vA.html">BL-11444-02-2</a></td>  
+                    <td class="text-right">7.354%</td>
+                    <td class="text-right">65,508.23 </td>
+                    <td class="text-right hidden-xs">900.07</td>
+                    <td class="text-right">66,408.30</td>
+                    <td class="text-right hidden-xs">13.24</td>
+                  </tr>					
+                  <tr>
+					<td class="text-left"><a href="ledger-vA.html">BL-11444-02-2</a></td>  
+                    <td class="text-right">7.354%</td>
+                    <td class="text-right">65,508.23 </td>
+                    <td class="text-right hidden-xs">900.07</td>
+                    <td class="text-right">66,408.30</td>
+                    <td class="text-right hidden-xs">13.24</td>
+                  </tr>
+                  <tr>
+					<td class="text-left">BL-11444-02-2</td>  
+                    <td class="text-right">7.354%</td>					  
+                    <td class="text-right">158,107.15</td>
+                    <td class="text-right hidden-xs">1,778.01</td>
+                    <td class="text-right">159,885.16</td>
+                    <td class="text-right hidden-xs">25.71</td>
+                  </tr>
+				  <tr>
+				    <td colspan="6" class="text-right">&nbsp;</td>
+			      </tr>
+				  <tr>
+					<td colspan="2" class="text-center" id="th-lend-total">Total</td>  
+                    <td class="highlight text-right">289,123.61</td>
+					<td class="highlight text-right hidden-xs">3,578.15</td>
+					<td class="highlight text-right">292,701.76</td>
+					<td class="highlight text-right hidden-xs">52.19</td>
+                  </tr>
+                </tbody>
+              </table>
+		
+				</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /container -->
+<footer class="footer">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+			
+                    <div data-toggle="collapse" class="tabber h3" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="Contact">
+                   Contact
+                    </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="Contact">
+              		<ul>
+						<li>Insurance : <a href="tel:(204) xxx-xxxx">(204) XXX-XXXX</a></li>
+						<li>Lending : <a href="tel:(204) xxx-xxxx">(204) XXX-XXXX</a></li>
+						<li>Email : <a href="mailto:brandon.lending@masc.mb.ca">brandon.lending@masc.mb.ca</a></li>
+						<li>Email : <a href="mailto:portage.insurance@masc.mb.ca">portage.insurance@masc.mb.ca</a></li>
+					</ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                
+                    <div  class="tabber h3" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="Corporate">
+                    Corporate
+                    </div>
+                
+                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+         			<ul>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/about.html" target="_blank">About</a></li>
+						<li><a href="http://web2.gov.mb.ca/laws/statutes/ccsm/_pdf.php?cap=a25" target="_blank">MASC Act & Regulations</a></li>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/corporate_governance.html" target="_blank">Corporate Governance</a></li>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/policies.html" target="_blank">Policies</a></li>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/publications.html" target="_blank">Publications</a></li>
+					</ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                
+                    <div  class="tabber h3" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                    How we can help
+                    </div>
+                <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<ul>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/insurance.html" target="_blank">Insurance</a></li>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/lending.html" target="_blank">Lending</a></li>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/program_farmland_school_tax_rebate.html" target="_blank">Farmland School Tax Rebate</a></li>
+						<li><a href="https://www.masc.mb.ca/masc.nsf/tools_and_data.html" target="_blank">Tools & Data</a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+		
+		  <p class="text-muted text-center">Copyright © 2018 Manitoba Agricultural Services Corporation (MASC). All rights reserved.</p>
+    </div>
+
+	
+	</footer>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<script src="assets/javascripts/site.js"></script>
+
+</body>
+</html>

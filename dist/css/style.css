@@ -1,0 +1,60 @@
+/*
+$green: #003300;
+$white: #FDFDFD;
+$black: #040004;
+$brown: #524835;
+$green-light: #56704b;
+$mint: #BFEDBE;
+$blue: #243757;
+$beige: #e5e27f;
+$yellow: #f2bc0f;
+$red: #BF001C;
+$orange: #F03C02;
+$yellow: #f2bc0f;	
+$brand-primary: $green;
+$brand-default: $white;
+
+body{
+
+}
+
+.navbar-default{
+	background-color: #030;
+}
+.navbar-default a{
+	color:#FFF;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: #56704b;
+}
+
+.sidebar ul li {
+	border-color: #56704b;
+}
+.navbar-default {
+	 border-color: #56704b;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #BFEDBE;
+}
+
+
+.navFirstLevel{
+	text-transform: uppercase;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: #56704b;
+}
+element.style {
+}
+.nav .open>a
+element.style {
+}
+.nav .open>a*/
